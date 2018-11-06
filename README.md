@@ -23,6 +23,7 @@ http.createServer(function (req, res) {
 
 ![alt text](https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%204.42.46%20PM.png)
 
+
 ## Streams - 
 
 - Can create streams in node.js
@@ -32,7 +33,7 @@ http.createServer(function (req, res) {
 
 
 ### Types of Streams -
-1. Readable Streams - allow nodejs to read data from stream
+1. <b> Readable Streams </b> - allow nodejs to read data from stream
 
 ```
 var http =require('http')
@@ -45,7 +46,7 @@ readStream.on('data',function(chunk)
 });
 ```
 
-2. Writable Streams - allows nodejs to write data to stream
+2.<b>  Writable Streams </b> - allows nodejs to write data to stream
 
 ```
 var http=require('http')
@@ -61,18 +62,39 @@ readStream.on('data',function(chunk)
 ```
 
 
-3. Duplex - can read and write to stream.
+3.<b> Duplex - </b> can read and write to stream.
 
 ## Pipe
+
 How we can use them to pipe a readable stream into a writable stream.
+
 ![alt text](https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%206.11.18%20PM.png)
 
 
+```
+var http=require('http')
+var fs=require('fs')
+
+var http = require('http');
+
+//create a server object:
+http.createServer(function (req, res) {
+
+  var readStream=fs.createReadStream(__dirname+"/readMe.txt",'utf-8')
+  var writeStream=fs.createWriteStream('writeMe.txt')
+
+  readStream.pipe(res);
+
+}).listen(8081);
+console.log('Now its listening.....');
+```
 
 
 # Node JS Modules
 In this chapter, you will know what is a module, functions and examples. And achieving modularity and separation
 of concern with the NodeJS Modules
+
+
 ### Functions
 ### Buffer
 ### Module
