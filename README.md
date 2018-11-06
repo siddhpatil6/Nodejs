@@ -22,10 +22,10 @@ http.createServer(function (req, res) {
 # Node JS Modules
 In this chapter, you will know what is a module, functions and examples. And achieving modularity and separation
 of concern with the NodeJS Modules
- Functions
- Buffer
- Module
- Module Types
- Core Modules
- Local Modules
- Module.Exports
+### Functions
+### Buffer
+### Module
+### Module Types
+### Core Modules
+### Local Modules
+### Module.Exports
