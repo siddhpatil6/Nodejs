@@ -17,6 +17,8 @@ http.createServer(function (req, res) {
 
 # What is Buffers, Streams, and Pipes?
 
+## Buffers
+
 
 
 
