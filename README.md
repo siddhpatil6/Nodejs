@@ -63,9 +63,9 @@ readStream.on('data',function(chunk)
 
 3. Duplex - can read and write to stream.
 
-
 ## Pipe
 How we can use them to pipe a readable stream into a writable stream.
+![alt text](https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%206.11.18%20PM.png)
 
 
 
