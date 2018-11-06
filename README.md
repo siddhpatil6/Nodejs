@@ -25,7 +25,8 @@ Buffer - is filled with data than passed along.<br>
 
 ## Streams - 
 
-
+- Can create streams in node.js
+- increases Performance
 
 
 
