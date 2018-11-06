@@ -17,7 +17,14 @@ http.createServer(function (req, res) {
 
 # What is Buffers, Streams, and Pipes?
 
-## Buffers
+## Buffers -
+Temporary storage spot - For Chunk of data - That is being Transfered from one place to another.<br>
+Buffer - is filled with data than passed along.<b
+!(https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%204.42.46%20PM.png)
+
+## Streams - 
+
+
 
 
 
