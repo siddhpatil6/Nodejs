@@ -28,7 +28,7 @@ http.createServer(function (req, res) {
 - Can create streams in node.js
 - increases Performance
 
-
+![alt text](https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%204.49.15%20PM.png)
 
 
 # Node JS Modules
