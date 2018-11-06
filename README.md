@@ -31,6 +31,13 @@ http.createServer(function (req, res) {
 ![alt text](https://github.com/siddhpatil6/Nodejs/blob/master/Screen%20Shot%202018-11-06%20at%204.49.15%20PM.png)
 
 
+### Types of Streams -
+1. Writable Streams - allows nodejs to write data to stream
+2. Readable Streams - allow nodejs to read data from stream
+3. Duplex - can read and write to stream.
+
+
+
 # Node JS Modules
 In this chapter, you will know what is a module, functions and examples. And achieving modularity and separation
 of concern with the NodeJS Modules
