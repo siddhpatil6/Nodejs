@@ -36,7 +36,11 @@ http.createServer(function (req, res) {
 2. Readable Streams - allow nodejs to read data from stream
 3. Duplex - can read and write to stream.
 
+1. Writable Streams -
 
+2. Readable Streams -
+
+3. Duplex
 
 # Node JS Modules
 In this chapter, you will know what is a module, functions and examples. And achieving modularity and separation
