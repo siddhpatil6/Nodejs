@@ -105,6 +105,51 @@ console.log('Now its listening.....');
 In this chapter, you will know what is a module, functions and examples. And achieving modularity and separation
 of concern with the NodeJS Modules
 
+## Include Modules
+To include a module, use the require() function with the name of the module:
+
+```
+var http = require('http');
+```
+
+
+Now your application has access to the HTTP module, and is able to create a server:
+
+```
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
+}).listen(8080);
+```
+
+Create Your Own Modules
+You can create your own modules, and easily include them in your applications.
+
+The following example creates a module that returns a date and time object:
+
+<b>Example</b>
+
+Create a module that returns the current date and time:
+```
+exports.myDateTime = function () {
+    return Date();
+};
+```
+Use the <b> exports </b> keyword to make properties and methods available outside the module file.
+
+Save the code above in a file called "myfirstmodule.js"
+
+```
+var http = require('http');
+var dt = require('./myfirstmodule');
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write("The date and time are currently: " + dt.myDateTime());
+    res.end();
+}).listen(8080);
+```
+
 
 ### Functions
 ### Buffer
