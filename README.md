@@ -209,7 +209,17 @@ nodemon bascrouting.js
 npm install express
 ```
 
+# How to call get api in express?
 
+
+```
+var express=require('express')
+var app=express() . // it creates object of express
+app.get('/Home',function(req,res){ // created url home
+  res.send('this is contact page')  // sends data in response
+});
+app.listen(8081)
+```
 
 ### Functions
 ### Buffer
