@@ -203,6 +203,13 @@ sudo npm install -g nodemon
 nodemon bascrouting.js
 ```
 
+## How to install express?
+
+```
+npm install express
+```
+
+
 
 ### Functions
 ### Buffer
