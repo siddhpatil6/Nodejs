@@ -15,6 +15,10 @@ http.createServer(function (req, res) {
 
 ```
 
+# How to run Nodejs file?
+- Command
+<b>node filename.js </b>
+
 # What is Buffers, Streams, and Pipes?
 
 ## Buffers -
