@@ -167,7 +167,7 @@ server.listen(8081) // this is port where server is listening
 ```
 
 ## Basic Routing in Nodejs
-
+- It is basic routing we are showing for different urls
 ```
 var http=require('http')
 var fs=require('fs')
