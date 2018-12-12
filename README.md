@@ -150,6 +150,21 @@ http.createServer(function (req, res) {
 }).listen(8080);
 ```
 
+## Serving JSON
+
+```
+var http=require('http')
+var server=http.createServer(function(req,res)
+{
+	res.writeHead(200,{'Content-Type':'application/json'}); // defines type of response we are writing
+	var myObj={ // object created
+		name:'Hellow'
+	}
+	res.end(JSON.stringify(myObj)) // res.end is use to return response
+}) .                            // JSON.stringify is use to convert string into JSON
+
+server.listen(8081) // this is port where server is listening
+```
 
 ### Functions
 ### Buffer
