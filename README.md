@@ -166,6 +166,29 @@ var server=http.createServer(function(req,res)
 server.listen(8081) // this is port where server is listening
 ```
 
+## Basic Routing in Nodejs
+
+```
+var http=require('http')
+var fs=require('fs')
+var server=http.createServer(200,function(req,res) . 
+{
+	if(req.url==='/home' || req.url === "/")
+	{
+		res.writeHead(200,{'Content-Type':'text/html'});  // read data in text and html form
+		fs.createReadStream(__dirname + '/home.html').pipe(res);  // read file from directory
+	}
+	else if(req.url==='/data') // read data from response
+	{
+		var data={
+			name:'Siddhant'
+		}
+		res.end(JSON.stringify(data));
+	}
+});
+server.listen(8081)
+```
+
 ### Functions
 ### Buffer
 ### Module
