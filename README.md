@@ -17,7 +17,14 @@ http.createServer(function (req, res) {
 
 # How to run Nodejs file?
 - Command
+
 <b>node filename.js </b>
+
+# To Stop Nodejs file?
+- Command
+
+<b>cntrl+C</b>
+
 
 # What is Buffers, Streams, and Pipes?
 
