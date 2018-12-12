@@ -189,6 +189,21 @@ var server=http.createServer(200,function(req,res) .
 server.listen(8081)
 ```
 
+# what is nodemon?
+nodemon is use to start sever automatically, whenever you make changes.
+
+## How to install nodemon?
+
+```
+sudo npm install -g nodemon
+```
+## How to run file in nodemon?
+
+```
+nodemon bascrouting.js
+```
+
+
 ### Functions
 ### Buffer
 ### Module
